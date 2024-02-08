@@ -1,0 +1,30 @@
+ 
+<div  class="dashboard-container">
+    <div *ngIf="showResponseForm1"  class="survey-container">
+        <h2 style="text-align: center;"><b>User Dashboard</b></h2>
+      <div *ngFor="let surveyq of surveytlist">
+        <mat-card>
+        <h4><b>{{ surveyq.survey }}</b></h4>
+        <div class="options-container">
+
+          <div *ngFor="let option of [surveyq.firstOption, surveyq.secondOption, surveyq.thirdOption, surveyq.fourthOption]">
+            <!-- <ul><li><a (click)="selectOption(surveyq, option)">{{ option }}</a></li></ul> -->
+            <br>
+            <button class="but" mat-raised-button color="primary" (click)="selectOption(surveyq, option)">{{ option }}</button>
+          </div>
+       
+        </div>
+      </mat-card>
+      </div>
+    
+      <button class="prim" mat-raised-button color="primary" (click)="submitSurvey()">Submit Response</button>
+    </div>
+  
+  
+    <app-user-survey-response *ngIf="showResponseForm" [responses]="userResponses"></app-user-survey-response>
+  </div> 
+    <!-- Redirect to Survey Response Component -->
+    <!-- <button mat-button color="primary" (click)="redirectToSurveyResponse()">View Survey Responses</button> -->
+
+
+    

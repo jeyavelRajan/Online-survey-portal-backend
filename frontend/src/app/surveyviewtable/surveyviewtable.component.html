@@ -1,0 +1,75 @@
+<!-- <table class="table" style="margin-top: 20px;">
+    <thead class="thead-dark">
+    <tr>
+        <th><b>Survey ID</b></th>
+        <th><b>Topic ID</b></th>
+        <th><b>survey</b></th>
+        <th><b>first</b></th>
+        <th><b>second</b></th>
+        <th><b>third</b></th>
+        <th><b>fourth</b></th>
+        <th><b>answer</b></th>
+       
+
+    </tr>
+    </thead>
+
+
+     <tr  *ngFor="let surveyq of surveytlist ">
+        <td>{{surveyq.surveyId}}</td>
+        <td>{{surveyq.topicId}}</td>
+        <td>{{surveyq.survey}}</td>
+        <td>{{surveyq.firstOption}}</td>
+        <td>{{surveyq.secondOption}}</td>
+        <td>{{surveyq.thirdOption}}</td>
+        <td>{{surveyq.fourthOption}}</td>
+        <td>{{surveyq.answer}}</td>
+       
+        <td colspan="2">
+            <button mat-icon-button color="primary" (click)="deleteSurvey(surveyq)"><mat-icon>delete</mat-icon></button>
+            <button mat-icon-button color="primary" (click)="editSurvey(surveyq)"><mat-icon>edit</mat-icon></button>
+        </td>
+    </tr>
+    
+</table> 
+
+  -->
+
+
+  <table class="table" style="margin-top: 20px;">
+    <thead class="thead-dark">
+      <tr>
+        <th><b>Survey ID</b></th>
+        <th><b>Topic ID</b></th>
+        <th><b>Survey</b></th>
+        <th><b>First</b></th>
+        <th><b>Second</b></th>
+        <th><b>Third</b></th>
+        <th><b>Fourth</b></th>
+        <th><b>Answer</b></th>
+      </tr>
+    </thead>
+  
+    <tr *ngFor="let surveyq of surveytlist">
+      <td>{{surveyq.surveyId}}</td>
+      <td>{{surveyq.topicId}}</td>
+      <td>{{surveyq.survey}}</td>
+      <td>{{surveyq.firstOption}}</td>
+      <td>{{surveyq.secondOption}}</td>
+      <td>{{surveyq.thirdOption}}</td>
+      <td>{{surveyq.fourthOption}}</td>
+      <td>{{surveyq.answer}}</td>
+  
+      <td colspan="2">
+        <button mat-icon-button color="primary" (click)="deleteSurvey(surveyq)"><mat-icon>delete</mat-icon></button>
+        <!-- <button mat-icon-button color="primary" (click)="editSurvey(surveyq)"><mat-icon>edit</mat-icon></button> -->
+       
+
+        <!-- <app-survey-update-form [selectedSurveyToUpdate]="selectedSurveyToUpdate"(updateEvent)="updateTableOnEvent()"></app-survey-update-form> -->
+      </td>
+    </tr>
+  </table>
+
+
+
+   

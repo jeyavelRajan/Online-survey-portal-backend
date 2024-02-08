@@ -1,0 +1,47 @@
+<form #updateForm="ngForm">
+  <div>
+    <mat-card>
+      <mat-form-field appearance="fill">
+        <mat-label>Survey ID</mat-label>
+        <input matInput [(ngModel)]="selectedSurveyToUpdate.surveyId" name="surveyId">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Topic ID</mat-label>
+        <input matInput [(ngModel)]="selectedSurveyToUpdate.topicId" name="topicId">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Survey</mat-label>
+        <input matInput [(ngModel)]="selectedSurveyToUpdate.survey" name="survey">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>First Option</mat-label>
+        <input matInput [(ngModel)]="selectedSurveyToUpdate.firstOption" name="firstOption">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Second Option</mat-label>
+        <input matInput [(ngModel)]="selectedSurveyToUpdate.secondOption" name="secondOption">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Third Option</mat-label>
+        <input matInput [(ngModel)]="selectedSurveyToUpdate.thirdOption" name="thirdOption">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Fourth Option</mat-label>
+        <input matInput [(ngModel)]="selectedSurveyToUpdate.fourthOption" name="fourthOption">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Answer</mat-label>
+        <input matInput [(ngModel)]="selectedSurveyToUpdate.answer" name="answer">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" (click)="updateSurvey()">Update Survey</button>
+    </mat-card>
+  </div>
+</form>

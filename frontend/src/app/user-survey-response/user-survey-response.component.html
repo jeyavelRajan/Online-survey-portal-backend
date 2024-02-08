@@ -1,0 +1,16 @@
+<!-- survey-response.component.html -->
+<div class="response-container">
+    <h3>Your Survey Responses</h3>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th><b>Survey ID</b></th>
+          <th><b>Response</b></th>
+        </tr>
+      </thead>
+      <tr *ngFor="let response of responses">
+        <td>{{ response.surveyId }}</td>
+        <td>{{ response.response }}</td>
+      </tr>
+    </table>
+    <button mat-raised-button color="primary" (click)="logout()">Logout</button>
