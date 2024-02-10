@@ -1,0 +1,33 @@
+/* user-dashboard.component.css */
+.dashboard-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.survey-container {
+  margin-bottom: 20px;
+}
+
+.response-form-container {
+  margin-top: 20px;
+}
+
+.but{
+width: 100px;
+}
+
+mat-card{
+  height: max-content;
+  width: 20cm;
+  align-items: center;
+  border-width: 2px;
+  border-radius: 20px;
+  border-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 15%;
+  justify-content: left;
+ 
+}
+.prim{
+  align-items: center;
+}

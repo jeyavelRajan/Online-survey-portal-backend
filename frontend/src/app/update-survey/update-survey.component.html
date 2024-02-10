@@ -1,0 +1,14 @@
+
+<h2 mat-dialog-title>Edit Survey</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <input matInput placeholder="User ID" [(ngModel)]="data.topicId" disabled>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="User Name" [(ngModel)]="data.topicName">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button (click)="onUpdateClick()">Update</button>
+</mat-dialog-actions>

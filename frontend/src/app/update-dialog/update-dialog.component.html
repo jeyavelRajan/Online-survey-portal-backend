@@ -1,0 +1,77 @@
+<h1 mat-dialog-title>Update User</h1>
+<div mat-dialog-content>
+    <form #updateForm="ngForm">
+      
+        <mat-form-field appearance="fill">
+            <mat-label>User ID</mat-label>
+            <input matInput [(ngModel)]="updatedUser.userId" name="userId" id="userId">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label> firstName</mat-label>
+            <input matInput [(ngModel)]="updatedUser.  firstName" name="firstName" id="firstName">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label> lastName</mat-label>
+            <input matInput [(ngModel)]="updatedUser.  lastName" name="lastName" id="lastName">
+        </mat-form-field>
+
+        
+        <mat-form-field appearance="fill">
+            <mat-label> EmailId</mat-label>
+            <input matInput [(ngModel)]="updatedUser.  emailId" name="emailId" id="emailId">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label> PhoneNo</mat-label>
+            <input matInput [(ngModel)]="updatedUser.  phoneNo" name="phoneNo" id="phoneNo">
+        </mat-form-field>
+
+        
+        <mat-form-field appearance="fill">
+            <mat-label> userName</mat-label>
+            <input matInput [(ngModel)]="updatedUser.  userName" name="userName" id="userName">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label> userType</mat-label>
+            <input matInput [(ngModel)]="updatedUser.userType" name="userType" id="userType">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label> password</mat-label>
+            <input matInput [(ngModel)]="updatedUser.password" name="password" id="password">
+        </mat-form-field>        
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()" id="but">Cancel</button>
+    <button mat-button [mat-dialog-close]="updatedUser" cdkFocusInitial>Update</button>
+</div>
+
+<!-- <h1 mat-dialog-title>Update User</h1>
+<div mat-dialog-content>
+    <form #updateForm="ngForm">
+  
+        <mat-form-field appearance="fill">
+            <mat-label>User ID</mat-label>
+            <input matInput [(ngModel)]="updatedUser.userId" name="userId" disabled>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label> userName</mat-label>
+            <input matInput [(ngModel)]="updatedUser.  userName" name="userName" disabled>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label> userType</mat-label>
+            <input matInput [(ngModel)]="updatedUser.userType" name="userType" disabled>
+        </mat-form-field>
+
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button [mat-dialog-close]="updatedUser" cdkFocusInitial>Update</button>
+</div> -->

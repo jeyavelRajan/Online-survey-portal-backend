@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Insert Survey</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <input matInput placeholder="TopicId" [(ngModel)]="data.topicId">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Topic Name" [(ngModel)]="data.topicName">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button (click)="onInsertClick()">Insert</button>
+</mat-dialog-actions>
